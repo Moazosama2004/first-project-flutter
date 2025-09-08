@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(FirstApp());
+}
+
+class FirstApp extends StatelessWidget {
+  const FirstApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('my first app'),
-          backgroundColor: Colors.cyan,
-        ),
-        body: Center(child: Text('Hello, World!')),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: Icon(Icons.add),
-        ),
-      ),
-    ),
-  );
+      home: Scaffold(body: Center(child: Text('Hello, World!'))),
+    );
+  }
 }
