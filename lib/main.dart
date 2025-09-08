@@ -12,13 +12,13 @@ class FirstApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(
+        body: Row(
           mainAxisAlignment: MainAxisAlignment.end,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Container(
-              width: 200,
-              height: 100,
+              width: 100,
+              height: 50,
               decoration: BoxDecoration(color: Colors.green),
               child: Center(child: Text('Hello, World!')),
             ),
